@@ -1,0 +1,177 @@
+
+
+
+
+@media only screen and (max-width: 1000px)  
+{
+
+
+
+
+    .header-text
+    {
+        font-size: 2.5em;
+
+
+
+    }
+
+    nav
+    {
+        width: 100%;
+
+
+    }
+
+    .section-header
+    {
+        width: 75%;
+        font-size: 1.5em;
+        margin: 20px auto;
+
+    }
+
+
+    .about-box
+    {
+        width: 85%;
+        height: fit-content;
+        font-size: 1em;
+        gap: 20px;
+
+    }
+
+
+    .technologies-container
+    {
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+
+     
+    }
+
+
+    .technologies-box
+    {
+        margin: 0 auto;
+
+        width: 17vw;
+        height: 17vw;
+    }
+
+    .technologies-header-box
+    {
+        margin: 25px auto;
+        margin-top: 0;
+        width: 15vw;
+        font-size: 0.65em ;
+
+       
+    }
+
+
+
+    .about-list-item
+    {
+        margin-left: 15px;
+
+    }
+
+
+
+    .mechanics-section-scroll-container
+    {
+        display: grid;
+        width: 100%;
+        
+        height: auto;
+
+        padding: 20px;
+
+        place-items: center;
+
+        
+
+        grid-template-areas: 
+        "box box"
+        "box box"
+        "arrow-left arrow-right"
+        
+        
+    }
+
+
+    .arrow-left
+    {
+
+        grid-area: arrow-left;
+        width: 90%;
+        height: auto;
+        margin: 0;
+
+
+    }
+
+    .arrow-right
+    {
+        grid-area: arrow-right;
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+
+    .arrow
+    {
+        margin-top: 40px;
+    }
+
+    .section-header
+    {
+        margin-bottom: 35px;
+    }
+
+    .mechanics-box
+    {
+        width: 85vw;
+        height: 85vw;
+
+        grid-area: box;
+
+
+    }
+
+
+    .mechanics-listed-container
+    {
+        display: none;
+
+
+    }
+
+    .mechanics-header-box
+    {
+        font-size: 1.5em;
+    }
+
+    .mechanics-info-box
+    {
+        padding: 20px;
+        width: 80%;
+        font-size: 0.5em;
+
+    }
+
+    footer
+    {
+        font-size: 1em;
+
+    }
+
+
+   
+
+
+    
+}

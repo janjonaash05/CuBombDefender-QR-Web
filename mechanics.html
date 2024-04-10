@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
+    <link href="https://fonts.cdnfonts.com/css/tw-cen-classified-mt-std" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+    <title>☻</title>
+
+
+    
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    
+    
+    <header>
+        
+        <h1 class="header-text">CuBomb Defender</h1>
+        <nav>
+
+            <a href="index.html">About</a>
+            <a href="mechanics.html">Mechanics</a>
+
+
+
+        </nav>
+    </header>
+  
+
+
+    
+
+
+    
+    <main>
+
+       
+
+
+
+        <section>
+
+            <p class="section-header">
+                Game Mechanics
+            </p>
+
+
+            <div class="mechanics-section-scroll-container">
+
+                <div class="arrow arrow-left"><img class="arrow-img" src="img/arrow_left.png" alt="" onclick="nextMechanic(-1)"></div>
+
+                <div class="box mechanics-box glow-target glow-blue">
+                    <img class="mechanics-img outline-target" src="img/mechanics/bomb.png" alt="">
+                </div>
+    
+                <div class="arrow arrow-right"><img class="arrow-img"  src="img/arrow_right.png" alt="" onclick="nextMechanic(1)" onmouseenter=""></div>
+
+
+            </div>
+
+
+            <div class="mechanics-listed-container box"></div>
+
+
+        </section>
+
+        <section>
+            <p class="section-header">
+                Description
+            </p>
+
+            <div class="mechanics-header-box box glow-target">
+                Bomb
+            </div>
+
+            <div class="mechanics-info-box box glow-target">
+
+
+                
+                    <p class="mechanics-list-item mechanic-desc-bomb">- Enemy object</p>
+                    <p class="mechanics-list-item mechanic-desc-bomb">- Floats towards the player's <span class="color-text-glow click-target click-target-shield">Shield</span></p>
+                    <p class="mechanics-list-item mechanic-desc-bomb">- Can be one of the 8 colors</p>
+                    <p class="mechanics-list-item mechanic-desc-bomb">- Can be shot down manually or automatically (via <span class="color-text-glow click-target click-target-turret-controls">Turret Control</span>) </p>
+                    <p class="mechanics-list-item mechanic-desc-bomb">- Player must have the correct colors set on their <span class="color-text-glow click-target click-target-turrets">Turrets</span></p>
+                    <p class="mechanics-list-item mechanic-desc-bomb">- If not shot down in time, removes either 1 <span class="color-text-glow click-target click-target-shield">Shield</span> charge or deals 1 damage to the <span class="color-text-glow click-target click-target-core">Core</span></p>
+                    
+                
+                    <p class="mechanics-list-item mechanic-desc-turret-controls">- Stationary Friendly objects</p>
+                    <p class="mechanics-list-item mechanic-desc-turret-controls">- Each one corresponds to 1 <span class="color-text-glow click-target click-target-turrets">Turret</span> and has 2 functions:</p>
+                    <p class="mechanics-list-item mechanic-desc-turret-controls">- Set the color on the <span class="color-text-glow click-target click-target-turrets">Turret</span> (color buttons) </p>
+                    <p class="mechanics-list-item mechanic-desc-turret-controls">- Order the <span class="color-text-glow click-target click-target-turrets">Turret</span> to shoot all bombs with the matching color (auto button) </p>
+                
+                    <p class="mechanics-list-item mechanic-desc-turrets">- Stationary Friendly objects</p>
+                    <p class="mechanics-list-item mechanic-desc-turrets">- Each one can have 1 of 4 colors (according to the <span class="color-text-glow click-target click-target-turret-controls">Turret Control</span>)</p>
+                    <p class="mechanics-list-item mechanic-desc-turrets">- Manually shoot down <span class="color-text-glow click-target click-target-bomb">Bombs</span> by clicking on them
+                    <p class="mechanics-list-item mechanic-desc-turrets">- Each manually shot down <span class="color-text-glow click-target click-target-bomb">Bomb</span> heals the <span class="color-text-glow click-target click-target-core">Core</span></p>
+                    <p class="mechanics-list-item mechanic-desc-turrets">- Each automatic use from <span class="color-text-glow click-target click-target-turret-controls">Turret Control</span> removes one charge </p>
+                    <p class="mechanics-list-item mechanic-desc-turrets">- If all charges are depleted, they recharge back over time</p>
+                    <p class="mechanics-list-item mechanic-desc-turrets">- Automatic use is disabled while recharging</p>
+                    
+                    <p class="mechanics-list-item mechanic-desc-slider-controls">- Stationary Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-slider-controls">- 2 functions: switch between modes and turn the <span class="color-text-glow click-target click-target-slider">Slider</span> on/off</p>
+                    <p class="mechanics-list-item mechanic-desc-slider-controls">- 2 modes: Bolt and Full-Auto
+                    <p class="mechanics-list-item mechanic-desc-slider-controls">- Bolt provides the <span class="color-text-glow click-target click-target-slider">Slider</span> with one powerful projectile</p>
+                    <p class="mechanics-list-item mechanic-desc-slider-controls">- Full-Auto provides the <span class="color-text-glow click-target click-target-slider">Slider</span> with a magazine of weak projectiles</p>
+                    <p class="mechanics-list-item mechanic-desc-slider-controls">- If projectile(s) are depleted, they recharge back over time</p>
+                    <p class="mechanics-list-item mechanic-desc-slider-controls">- Mode is disabled while recharging</p>
+                
+                    <p class="mechanics-list-item mechanic-desc-slider">- Stationary Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-slider">- Click or hold to shoot <span class="color-text-glow click-target click-target-slider-controls">Slider Controls</span> projectile when on </p>
+                    <p class="mechanics-list-item mechanic-desc-slider">- Aim towards cursor when on </p>
+                    <p class="mechanics-list-item mechanic-desc-slider">- The scope glows when successfuly aiming at a target</p>
+                    
+                    <p class="mechanics-list-item mechanic-desc-disruptor">- Enemy object</p>
+                    <p class="mechanics-list-item mechanic-desc-disruptor">- Target for <span class="color-text-glow click-target click-target-slider-controls">Slider</span>: destroyed in 1 shot from Bolt and multiple shots from Full-Auto </p>
+                    <p class="mechanics-list-item mechanic-desc-disruptor">- Rises up and begins charge-up process</p>
+                    <p class="mechanics-list-item mechanic-desc-disruptor">- During charge-up, it moves around and adds color bars</p>
+                    <p class="mechanics-list-item mechanic-desc-disruptor">- If all bars are colored, it aims at <span class="color-text-glow click-target click-target-turret-controls">Turret Controls</span> and launches its projectiles</p>
+                    <p class="mechanics-list-item mechanic-desc-disruptor">- If not destroyed before they reach <span class="color-text-glow click-target click-target-turret-controls">Turret Controls</span>, they disable them and <span class="color-text-glow click-target click-target-turrets">Turrets</span> for a set time </p>
+                    
+                    <p class="mechanics-list-item mechanic-desc-supernova">- Enemy objects</p>
+                    <p class="mechanics-list-item mechanic-desc-supernova">- Stars - 1-8 at a time</p>
+                    <p class="mechanics-list-item mechanic-desc-supernova">- Stars - Target for <span class="color-text-glow click-target click-target-slider-controls">Slider</span>: destroyed in 1 shot from both Bolt and Full-Auto </p>
+                    <p class="mechanics-list-item mechanic-desc-supernova">- Stars - Emerge, then begin charge-up process</p>
+                    <p class="mechanics-list-item mechanic-desc-supernova">- Stars - After charge-up, they fall towards a certain point</p>
+                    <p class="mechanics-list-item mechanic-desc-supernova">- Supernova - Grows from each fallen Star</p>
+                    <p class="mechanics-list-item mechanic-desc-supernova">- Supernova - After all Stars fall, it begins charging-up by adding all fallen Star colors </p>
+                    <p class="mechanics-list-item mechanic-desc-supernova">- Supernova - When charged-up, it directly blasts the <span class="color-text-glow click-target click-target-core">Core</span> with lasers, 1 damage per Star fallen</p>
+                    
+                    <p class="mechanics-list-item mechanic-desc-shield">- Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-shield">- Consists of 3 parts: Emitter, Storage, Adapter</p>
+                    <p class="mechanics-list-item mechanic-desc-shield">- Emitter - Emits shield and blocks incoming <span class="color-text-glow click-target click-target-bomb">Bombs</span> from damaging the <span class="color-text-glow click-target click-target-core">Core</span></p>
+                    <p class="mechanics-list-item mechanic-desc-shield">- Storage - Stores shield charges, each hit blocked removes one charge</p>
+                    <p class="mechanics-list-item mechanic-desc-shield">- Storage - If all charges are depleted, they recharge over time and all damage goes to the <span class="color-text-glow click-target click-target-core">Core</span> </p>
+                    <p class="mechanics-list-item mechanic-desc-shield">- Adapter - Adapts energy from the <span class="color-text-glow click-target click-target-core">Core</span> into Storage recharge speed  </p>
+
+                    <p class="mechanics-list-item mechanic-desc-core">- Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-core">- Consists of 2 parts: Core and Core Ring</p>
+                    <p class="mechanics-list-item mechanic-desc-core">- Core - Provides energy to the <span class="color-text-glow click-target click-target-shield">Shield's</span> Adapter based on its health</p>
+                    <p class="mechanics-list-item mechanic-desc-core">- Core - 6 stages of health, 17 health points </p>
+                    <p class="mechanics-list-item mechanic-desc-core">- Core - Health can be replenished by manually shooting <span class="color-text-glow click-target click-target-bomb">Bombs</span> with a <span class="color-text-glow click-target click-target-turrets">Turret</span> </p>
+                    <p class="mechanics-list-item mechanic-desc-core">- Core Ring - Displays health by colored segments</p>
+
+                    <p class="mechanics-list-item mechanic-desc-spinner">- Enemy object</p>
+                    <p class="mechanics-list-item mechanic-desc-spinner">- Increases its charge-up value with each damage to the <span class="color-text-glow click-target click-target-core">Core</span></p>
+                    <p class="mechanics-list-item mechanic-desc-spinner">- After <span class="color-text-glow click-target click-target-core">Core</span> death, it begins a charge-up process that causes a <b>GAME OVER</b> when finished </p>
+                    <p class="mechanics-list-item mechanic-desc-spinner">- This can be prevented by manually shooting a <span class="color-text-glow click-target click-target-bomb">Bomb</span> with a <span class="color-text-glow click-target click-target-turrets">Turret</span></p>
+
+                    <p class="mechanics-list-item mechanic-desc-harpoon">- Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-harpoon">- When on, click to launch it towards the center of <span class="color-text-glow click-target click-target-token-transporters">Token Transporters</span> </p>
+                    <p class="mechanics-list-item mechanic-desc-harpoon">- Can grab <span class="color-text-glow click-target click-target-tokens">Tokens</span></p>
+                    <p class="mechanics-list-item mechanic-desc-harpoon">- If a <span class="color-text-glow click-target click-target-tokens">Token</span> isn't caught, it can be launched after a delay</p>
+                    
+                    <p class="mechanics-list-item mechanic-desc-tokens">- Friendly and Enemy objects</p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- Currency for the <span class="color-text-glow click-target click-target-upgrade-station">Upgrade Station</span> and <span class="color-text-glow click-target click-target-helper-station">Helper Station</span>  </p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- 4 HP</p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- Move between the center and <span class="color-text-glow click-target click-target-token-transporters">Token Transporters</span></p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- Loses 1 HP when entering <span class="color-text-glow click-target click-target-token-transporters">Token Transporters</span>  </p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- Different behaviour for catches and death:  </p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- Friendly - adds 1 to the Token Counter when caught, nothing when destroyed  </p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- Enemy - increases Score when caught, buffs a certain enemy mechanic when destroyed:  </p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- - <span class="color-text-glow click-target click-target-token-transporters">Disruptor</span> movement speed</p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- - <span class="color-text-glow click-target click-target-token-supernova">Supernova</span> max Stars amount</p>
+                    <p class="mechanics-list-item mechanic-desc-tokens">- - Convert a <span class="color-text-glow click-target click-target-grid">Bomb Grid</span> Placeholder unit into a Spawner unit (4 Tokens for 1 conversion) </p>
+                    
+                    <p class="mechanics-list-item mechanic-desc-token-transporters">- Neutral objects</p>
+                    <p class="mechanics-list-item mechanic-desc-token-transporters">- Spawn and relocate <span class="color-text-glow click-target click-target-tokens">Tokens</span></p>
+                    <p class="mechanics-list-item mechanic-desc-token-transporters">- When a <span class="color-text-glow click-target click-target-tokens">Token</span> enters, it may be relocated to another Transporter</p>
+                    <p class="mechanics-list-item mechanic-desc-token-transporters">- Relocated <span class="color-text-glow click-target click-target-tokens">Tokens</span> head towards the center, then another Transporter </p>
+           
+                    <p class="mechanics-list-item mechanic-desc-grid">- A set of Enemy objects</p>
+                    <p class="mechanics-list-item mechanic-desc-grid">- Each unit can either be a Placeholder or a Spawner</p>
+                    <p class="mechanics-list-item mechanic-desc-grid">- Spawners spawn <span class="color-text-glow click-target click-target-bomb">Bombs</span> in set intervals (decreased with time)</p>
+                    <p class="mechanics-list-item mechanic-desc-grid">- Placeholders can be replaced by Spawners with Enemy <span class="color-text-glow click-target click-target-tokens">Tokens</span></p>
+           
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- Can be used to Upgrade certain mechanics:</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- - <span class="color-text-glow click-target click-target-turret">Turret</span> capacity</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- - <span class="color-text-glow click-target click-target-turret">Turret</span> recharge speed</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- - <span class="color-text-glow click-target click-target-slider">Slider</span> recharge speed</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- - <span class="color-text-glow click-target click-target-turret">Slider</span> projectile speed</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- Use arrows to navigate selection and click on the Upgrade icon to proceed</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- Each Upgrade has up to 4 degrees</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- When a mechanic is fully Upgrade, <span class="color-text-glow click-target click-target-shield">Shield</span> Storage capacity increases</p>
+                    <p class="mechanics-list-item mechanic-desc-upgrade-station">- Each degree costs 1 <span class="color-text-glow click-target click-target-tokens">Token</span></p>
+           
+                    <p class="mechanics-list-item mechanic-desc-helper-station">- Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-helper-station">- Can be used to spawn Helpers: <span class="color-text-glow click-target click-target-black-hole">Black Hole</span> or <span class="color-text-glow click-target click-target-emp">EMP</span> </p>
+                    <p class="mechanics-list-item mechanic-desc-helper-station">- Use arrows to navigate selection and click on the Helper icon to proceed</p>
+                    <p class="mechanics-list-item mechanic-desc-helper-station">- Each Helper spawned costs 4 <span class="color-text-glow click-target click-target-tokens">Tokens</span> </p>
+                    <p class="mechanics-list-item mechanic-desc-helper-station">- Can have both active at once</p>
+
+                    <p class="mechanics-list-item mechanic-desc-black-hole">- Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-black-hole">- Sucks up all <span class="color-text-glow click-target click-target-bomb">Bombs</span> and prevents them from spawning</p>
+                    <p class="mechanics-list-item mechanic-desc-black-hole">- Lasts for 4 seconds</p>
+                    
+
+                    <p class="mechanics-list-item mechanic-desc-emp">- Friendly object</p>
+                    <p class="mechanics-list-item mechanic-desc-emp">- Slowly destroys and disables spawning for every <span class="color-text-glow click-target click-target-disruptor">Disruptor</span>, <span class="color-text-glow click-target click-target-supernova">Star</span> and <span class="color-text-glow click-target click-target-supernova">Supernova</span> </p>
+                    <p class="mechanics-list-item mechanic-desc-emp">- Lasts for 4 seconds</p>
+
+
+
+
+
+
+                </div>  
+
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+    <footer>&copy; Jan Jonáš 2024, email: janjonaash05@gmail.com</footer>
+
+
+
+    <script src="js/color_name.js"></script>
+    <script src="js/mechanic_swap.js"></script>
+    
+</body>
+</html>
